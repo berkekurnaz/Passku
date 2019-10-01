@@ -3,7 +3,42 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{15650776-6753-4569-9A96-856088700D7F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.Generator", "Passku.Generator\Passku.Generator.csproj", "{3A59D1BD-FDD0-4857-9978-A4347E91697F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.WebCoreApp", "Passku.WebCoreApp\Passku.WebCoreApp.csproj", "{B14817DF-E64D-4292-BAD3-F53626822A80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.Models", "Passku.Models\Passku.Models.csproj", "{228C7D82-347D-4632-9955-574070481DAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.TestApp", "Passku.TestApp\Passku.TestApp.csproj", "{0EB7D192-0AEC-48F8-A175-CCEF303B941D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A59D1BD-FDD0-4857-9978-A4347E91697F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A59D1BD-FDD0-4857-9978-A4347E91697F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A59D1BD-FDD0-4857-9978-A4347E91697F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A59D1BD-FDD0-4857-9978-A4347E91697F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14817DF-E64D-4292-BAD3-F53626822A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14817DF-E64D-4292-BAD3-F53626822A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14817DF-E64D-4292-BAD3-F53626822A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14817DF-E64D-4292-BAD3-F53626822A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228C7D82-347D-4632-9955-574070481DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228C7D82-347D-4632-9955-574070481DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228C7D82-347D-4632-9955-574070481DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228C7D82-347D-4632-9955-574070481DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB7D192-0AEC-48F8-A175-CCEF303B941D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB7D192-0AEC-48F8-A175-CCEF303B941D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB7D192-0AEC-48F8-A175-CCEF303B941D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB7D192-0AEC-48F8-A175-CCEF303B941D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
