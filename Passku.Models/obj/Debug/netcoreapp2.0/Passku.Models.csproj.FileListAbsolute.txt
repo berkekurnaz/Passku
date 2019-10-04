@@ -1,0 +1,6 @@
+D:\YazilimProjeleri2019\Passku\Passku.Models\bin\Debug\netcoreapp2.0\Passku.Models.deps.json
+D:\YazilimProjeleri2019\Passku\Passku.Models\bin\Debug\netcoreapp2.0\Passku.Models.dll
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Debug\netcoreapp2.0\Passku.Models.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Debug\netcoreapp2.0\Passku.Models.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Debug\netcoreapp2.0\Passku.Models.AssemblyInfoInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Debug\netcoreapp2.0\Passku.Models.AssemblyInfo.cs
