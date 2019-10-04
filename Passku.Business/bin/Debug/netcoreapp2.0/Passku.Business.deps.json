@@ -6,12 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "Passku.Models/1.0.0": {
+      "Passku.Business/1.0.0": {
         "dependencies": {
-          "MongoDB.Driver": "2.9.2"
+          "Passku.DataAccess": "1.0.0",
+          "Passku.Models": "1.0.0"
         },
         "runtime": {
-          "Passku.Models.dll": {}
+          "Passku.Business.dll": {}
         }
       },
       "DnsClient/1.2.0": {
@@ -1018,11 +1019,28 @@
           "System.Runtime": "4.3.0",
           "System.Runtime.Handles": "4.3.0"
         }
+      },
+      "Passku.DataAccess/1.0.0": {
+        "dependencies": {
+          "MongoDB.Driver": "2.9.2",
+          "Passku.Models": "1.0.0"
+        },
+        "runtime": {
+          "Passku.DataAccess.dll": {}
+        }
+      },
+      "Passku.Models/1.0.0": {
+        "dependencies": {
+          "MongoDB.Driver": "2.9.2"
+        },
+        "runtime": {
+          "Passku.Models.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "Passku.Models/1.0.0": {
+    "Passku.Business/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1628,6 +1646,16 @@
       "sha512": "sha512-k/+g4b7vjdd4aix83sTgC9VG6oXYKAktSfNIJUNGxPEj7ryEOfzHHhfnmsZvjxawwcD9HyWXKCXmPjX8U4zeSw==",
       "path": "system.threading.threadpool/4.3.0",
       "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
+    },
+    "Passku.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Passku.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

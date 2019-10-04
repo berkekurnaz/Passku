@@ -8,3 +8,5 @@ D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.
 D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.DataAccess.pdb
 D:\YazilimProjeleri2019\Passku\Passku.DataAccess\bin\Debug\netcoreapp2.0\Passku.Models.dll
 D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.DataAccess.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\bin\Debug\netcoreapp2.0\Passku.Models.pdb
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.DataAccess.csproj.CopyComplete

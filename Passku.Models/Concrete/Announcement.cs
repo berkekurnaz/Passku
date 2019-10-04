@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Passku.Models.Concrete
 {
-    public class Announcements : MongoBaseModel
+    public class Announcement : MongoBaseModel
     {
 
         [BsonElement("Title")]

@@ -5,10 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MongoDB.Driver" Version="2.9.2" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\Passku.DataAccess\Passku.DataAccess.csproj" />
     <ProjectReference Include="..\Passku.Models\Passku.Models.csproj" />
   </ItemGroup>
 

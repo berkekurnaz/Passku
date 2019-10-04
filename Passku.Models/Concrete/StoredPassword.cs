@@ -15,6 +15,9 @@ namespace Passku.Models.Concrete
         [BsonElement("Content")]
         public string Content { get; set; }
 
+        [BsonElement("Url")]
+        public string Url { get; set; }
+
         [BsonElement("Password")]
         public string Password { get; set; }
 
