@@ -8,13 +8,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.Generator", "Passku.Generator\Passku.Generator.csproj", "{3A59D1BD-FDD0-4857-9978-A4347E91697F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passku.Generator", "Passku.Generator\Passku.Generator.csproj", "{3A59D1BD-FDD0-4857-9978-A4347E91697F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.WebCoreApp", "Passku.WebCoreApp\Passku.WebCoreApp.csproj", "{B14817DF-E64D-4292-BAD3-F53626822A80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passku.WebCoreApp", "Passku.WebCoreApp\Passku.WebCoreApp.csproj", "{B14817DF-E64D-4292-BAD3-F53626822A80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.Models", "Passku.Models\Passku.Models.csproj", "{228C7D82-347D-4632-9955-574070481DAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passku.Models", "Passku.Models\Passku.Models.csproj", "{228C7D82-347D-4632-9955-574070481DAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.TestApp", "Passku.TestApp\Passku.TestApp.csproj", "{0EB7D192-0AEC-48F8-A175-CCEF303B941D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passku.TestApp", "Passku.TestApp\Passku.TestApp.csproj", "{0EB7D192-0AEC-48F8-A175-CCEF303B941D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.DataAccess", "Passku.DataAccess\Passku.DataAccess.csproj", "{C334E47F-ABFC-4544-8269-E23404BA6AC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{0EB7D192-0AEC-48F8-A175-CCEF303B941D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EB7D192-0AEC-48F8-A175-CCEF303B941D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EB7D192-0AEC-48F8-A175-CCEF303B941D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C334E47F-ABFC-4544-8269-E23404BA6AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C334E47F-ABFC-4544-8269-E23404BA6AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C334E47F-ABFC-4544-8269-E23404BA6AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C334E47F-ABFC-4544-8269-E23404BA6AC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

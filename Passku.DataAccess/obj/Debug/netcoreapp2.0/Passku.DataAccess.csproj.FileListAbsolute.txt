@@ -1,0 +1,10 @@
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\bin\Debug\netcoreapp2.0\Passku.DataAccess.deps.json
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\bin\Debug\netcoreapp2.0\Passku.DataAccess.dll
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\bin\Debug\netcoreapp2.0\Passku.DataAccess.pdb
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.DataAccess.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.DataAccess.AssemblyInfoInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.DataAccess.AssemblyInfo.cs
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.DataAccess.dll
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.DataAccess.pdb
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\bin\Debug\netcoreapp2.0\Passku.Models.dll
+D:\YazilimProjeleri2019\Passku\Passku.DataAccess\obj\Debug\netcoreapp2.0\Passku.DataAccess.csprojAssemblyReference.cache
