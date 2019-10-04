@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "Passku.TestApp/1.0.0": {
-        "dependencies": {
-          "Passku.Generator": "1.0.0"
-        },
-        "runtime": {
-          "Passku.TestApp.dll": {}
-        }
-      },
       "Passku.Generator/1.0.0": {
         "runtime": {
           "Passku.Generator.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "Passku.TestApp/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Passku.Generator/1.0.0": {
       "type": "project",
       "serviceable": false,
