@@ -1,0 +1,62 @@
+﻿@model Passku.Models.Concrete.User
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<div class="site-section" id="contact-section">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-7 mb-5">
+
+                <form asp-controller="User" asp-action="Login" method="post" enctype="multipart/form-data" class="p-5 bg-white">
+
+                    <center><h2 class="h4 text-black mb-5">Login</h2></center>
+                    <hr />
+
+                    @if (TempData["MsgUserLoginError"] != null)
+                    {
+                        <div class="alert alert-dark text-center" role="alert">
+                            @TempData["MsgUserLoginError"]
+                        </div>
+                    }
+
+                    @if (TempData["MsgUserRegisterSuccesful"] != null)
+                    {
+                        <div class="alert alert-dark text-center" role="alert">
+                            @TempData["MsgUserRegisterSuccesful"]
+                        </div>
+                    }
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <center><label class="text-black text-center" for="email">Username</label></center>
+                            <input type="text" asp-for="Username" class="form-control rounded-0">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <center><label class="text-black text-center" for="email">Password</label></center>
+                            <input type="text" asp-for="Password" class="form-control rounded-0">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <center><input type="submit" value="Login" class="btn btn-primary mr-2 mb-2"></center>
+                        </div>
+                    </div>
+                    <center><a href="/User/Register/">Create A New Passku Account</a></center>
+                    <center><a href="/User/Register/">Forgot My Password</a></center>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+

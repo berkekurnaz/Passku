@@ -51,5 +51,19 @@ namespace Passku.Business.Concrete.MongoDb
             return result;
         }
 
+        public User CheckByUsername(User model)
+        {
+            var result = new User();
+            result = _userRepository.GetAll().Find(x => x.Username == model.Username);
+            return result;
+        }
+
+        public User CheckByMail(User model)
+        {
+            var result = new User();
+            result = _userRepository.GetAll().Find(x => x.MailAdress == model.MailAdress);
+            return result;
+        }
+
     }
 }

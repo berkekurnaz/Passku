@@ -20,5 +20,9 @@ namespace Passku.Business.Abstract.MongoDb
 
         User Login(User model);
 
+        User CheckByUsername(User model);
+
+        User CheckByMail(User model);
+
     }
 }

@@ -1,0 +1,70 @@
+﻿@model Passku.Models.Concrete.User
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<div class="site-section" id="contact-section">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-7 mb-5">
+
+
+
+                <form asp-controller="User" asp-action="Register" method="post" enctype="multipart/form-data" class="p-5 bg-white">
+
+                    <center><h2 class="h4 text-black mb-5">Register</h2></center>
+                    <hr />
+
+                    @if (TempData["MsgUserRegisterError"] != null)
+                    {
+                        <div class="alert alert-dark text-center" role="alert">
+                            @TempData["MsgUserRegisterError"]
+                        </div>
+                    }
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="text-black" for="NameSurname">Name Surname</label>
+                            <input type="text" asp-for="NameSurname" class="form-control rounded-0" required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="text-black" for="email">Email</label>
+                            <input type="email" asp-for="MailAdress" class="form-control rounded-0" required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="text-black" for="Username">Username</label>
+                            <input type="text" asp-for="Username" class="form-control rounded-0" required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="text-black" for="Password">Password</label>
+                            <input type="text" asp-for="Password" class="form-control rounded-0" required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <center><input type="submit" value="Register" class="btn btn-primary mr-2 mb-2"></center>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
