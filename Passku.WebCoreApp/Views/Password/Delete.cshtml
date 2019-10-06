@@ -1,0 +1,58 @@
+﻿@model Passku.Models.Concrete.StoredPassword
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <strong class="card-title">Delete Password</strong>
+            </div>
+            <div class="card-body">
+                <div id="pay-invoice">
+                    <div class="card-body">
+                        <form asp-controller="Password" asp-action="Delete" method="post" enctype="multipart/form-data">
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Title</label>
+                                <input asp-for="Title" type="text" class="form-control" value="@Model.Title" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Password</label>
+                                <input asp-for="Password" type="text" class="form-control" value="@Model.Password" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Content</label>
+                                <textarea asp-for="Content" class="form-control" rows="3" readonly>@Model.Content</textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Url</label>
+                                <input asp-for="Url" type="text" class="form-control" value="@Model.Url" readonly />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Created Date</label>
+                                <input asp-for="CreatedDate" type="text" class="form-control" value="@Model.CreatedDate" readonly />
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-lg btn-danger btn-block">
+                                    <i class="fa fa-trash fa-lg"></i>&nbsp;
+                                    <span id="payment-button-amount">Delete Password</span>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

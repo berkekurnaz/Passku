@@ -1,0 +1,53 @@
+﻿@model Passku.Models.Concrete.StoredPassword
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <strong class="card-title">Add New Password</strong>
+            </div>
+            <div class="card-body">
+                <div id="pay-invoice">
+                    <div class="card-body">
+                        <form asp-controller="Password" asp-action="Add" method="post" enctype="multipart/form-data">
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Title</label>
+                                <input asp-for="Title" type="text" class="form-control" placeholder="Enter Password Title..." required/>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Password</label>
+                                <input asp-for="Password" type="text" class="form-control" placeholder="Enter Your Password..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Content</label>
+                                <textarea asp-for="Content" class="form-control" placeholder="Enter Password Description..." rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Url</label>
+                                <input asp-for="Url" type="text" class="form-control" placeholder="Enter Password Title..." />
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-lg btn-info btn-block">
+                                    <i class="fa fa-plus-circle fa-lg"></i>&nbsp;
+                                    <span id="payment-button-amount">Add New Password</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+

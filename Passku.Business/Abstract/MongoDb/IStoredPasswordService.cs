@@ -10,6 +10,8 @@ namespace Passku.Business.Abstract.MongoDb
 
         List<StoredPassword> GetAll();
 
+        List<StoredPassword> GetByUserId(string userId);
+
         StoredPassword GetById(string id);
 
         void Add(StoredPassword model);

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using Passku.Business.Concrete.MongoDb;
 using Passku.Models.Concrete;
 
@@ -13,10 +14,12 @@ namespace Passku.WebCoreApp.Controllers
     {
 
         UserManager userManager { get; set; }
+        StoredPasswordManager storedPasswordManager { get; set; }
 
-        public UserController(UserManager userManager)
+        public UserController(UserManager userManager, StoredPasswordManager storedPasswordManager)
         {
             this.userManager = userManager;
+            this.storedPasswordManager = storedPasswordManager;
         }
 
 
@@ -27,6 +30,18 @@ namespace Passku.WebCoreApp.Controllers
         }
 
 
+
+        /* List Passwords By UserId */
+        public IActionResult Passwords()
+        {
+            var userId = HttpContext.Session.GetString("SessionUserId").ToString();
+            var list = storedPasswordManager.GetByUserId(userId);
+            return View(list);
+        }
+
+
+
+        /*---------------------------------------------------------------------------*/
 
         /* Login Operations */
         public IActionResult Login()
@@ -73,5 +88,14 @@ namespace Passku.WebCoreApp.Controllers
             return View();
         }
 
+
+
+        /* Logout Operations */
+        public IActionResult Logout()
+        {
+            return RedirectToAction("Index","Home");
+        }
+
+        /*---------------------------------------------------------------------------*/
     }
 }

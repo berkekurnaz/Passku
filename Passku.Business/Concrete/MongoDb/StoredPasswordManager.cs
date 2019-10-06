@@ -1,4 +1,5 @@
-﻿using Passku.Business.Abstract.MongoDb;
+﻿using MongoDB.Bson;
+using Passku.Business.Abstract.MongoDb;
 using Passku.DataAccess.Concrete.MongoDb;
 using Passku.Models.Concrete;
 using System;
@@ -22,6 +23,12 @@ namespace Passku.Business.Concrete.MongoDb
         public List<StoredPassword> GetAll()
         {
             return _storedPasswordRepository.GetAll();
+        }
+
+        public List<StoredPassword> GetByUserId(string userId)
+        {
+            var user = new ObjectId(userId);
+            return _storedPasswordRepository.GetAll().FindAll(x => x.UserId == user);
         }
 
         public StoredPassword GetById(string id)

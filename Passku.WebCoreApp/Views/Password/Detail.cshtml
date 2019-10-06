@@ -1,0 +1,64 @@
+﻿@model Passku.Models.Concrete.StoredPassword
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <strong class="card-title">Update Password</strong>
+            </div>
+            <div class="card-body">
+                <div id="pay-invoice">
+                    <div class="card-body">
+                        <form asp-controller="" asp-action="" method="post" enctype="multipart/form-data">
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Title</label>
+                                <input asp-for="Title" type="text" class="form-control" value="@Model.Title" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Password</label>
+                                <input asp-for="Password" type="text" class="form-control" value="@Model.Password" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Content</label>
+                                <textarea asp-for="Content" class="form-control" rows="3" readonly>@Model.Content</textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Url</label>
+                                <input asp-for="Url" type="text" class="form-control" value="@Model.Url" readonly />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Created Date</label>
+                                <input asp-for="CreatedDate" type="text" class="form-control" value="@Model.CreatedDate" readonly />
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <center><a href="/User/Passwords/" class="btn btn-success" style="margin-bottom:10px;"><i class="fa fa-angle-double-left"></i> Back Page</a></center>
+                                </div>
+                                <div class="col-md-4">
+                                    <center><a href="/Password/Edit/@Model.Id" class="btn btn-warning" style="margin-bottom:10px;"><i class="fa fa-pencil"></i> Edit Password</a></center>
+                                </div>
+                                <div class="col-md-4">
+                                    <center><a href="/Password/Delete/@Model.Id" class="btn btn-danger" style="margin-bottom:10px;"><i class="fa fa-trash"></i> Delete Password</a></center>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
