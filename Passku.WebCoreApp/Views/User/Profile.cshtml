@@ -1,0 +1,103 @@
+﻿@model Passku.Models.Concrete.User
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+
+    @if (TempData["MsgUserChangePasswordSuccesful"] != null)
+    {
+    <div class="col-md-12">
+        <div class="alert alert-dark text-center" role="alert">
+            @TempData["MsgUserChangePasswordSuccesful"]
+        </div>
+    </div>
+    }
+
+    @if (TempData["MsgUserChangePasswordError"] != null)
+    {
+    <div class="col-md-12">
+        <div class="alert alert-dark text-center" role="alert">
+            @TempData["MsgUserChangePasswordError"]
+        </div>
+    </div>
+    }
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <strong class="card-title">Profile</strong>
+            </div>
+            <div class="card-body">
+                <div id="pay-invoice">
+                    <div class="card-body">
+                        <form asp-controller="" asp-action="" method="post" enctype="multipart/form-data">
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Name Surname</label>
+                                <input asp-for="NameSurname" type="text" class="form-control" value="@Model.NameSurname" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Mail Adress</label>
+                                <input asp-for="MailAdress" type="text" class="form-control" value="@Model.MailAdress" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Username</label>
+                                <input asp-for="Username" type="text" class="form-control" value="@Model.Username" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Created Date</label>
+                                <input asp-for="CreatedDate" type="text" class="form-control" value="@Model.CreatedDate" readonly>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <strong class="card-title">Change Password</strong>
+            </div>
+            <div class="card-body">
+                <div id="pay-invoice">
+                    <div class="card-body">
+                        <form asp-controller="User" asp-action="ChangePassword" method="post" enctype="multipart/form-data">
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Old Password</label>
+                                <input id="oldPassword" name="oldPassword" type="text" class="form-control" placeholder="Enter Your Old Password..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">New Password</label>
+                                <input id="newPassword1" name="newPassword1" type="text" class="form-control" placeholder="Enter Your New Password..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">New Password Repeat</label>
+                                <input id="newPassword2" name="newPassword2" type="text" class="form-control" placeholder="Enter Your New Password Again..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <br /><center><button type="submit" class="btn btn-success"><i class="fa fa-key"></i> Change Password</button></center>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
