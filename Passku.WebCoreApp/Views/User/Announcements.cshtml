@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Passku.Models.Concrete.Announcement>
+@{
+    ViewData["Title"] = "Announcements";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header text-center">
+                <strong class="card-title mb-3">Announcements</strong>
+            </div>
+            <div class="card-body">
+                <div class="mx-auto d-block">
+
+                    @if (Model.Count() > 0)
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <center><a href="/User/AnnouncementDetail/"><p>Hello World -10/7/2019</p></a></center>
+                        }
+                    }
+                    else
+                    {
+                        <center><p>No announcements found.</p></center>
+                    }
+
+                </div>
+                <hr>
+                <div class="card-text text-sm-center">
+                    <a href="#"><i class="fa fa-facebook pr-1"></i></a>
+                    <a href="#"><i class="fa fa-twitter pr-1"></i></a>
+                    <a href="#"><i class="fa fa-linkedin pr-1"></i></a>
+                    <a href="#"><i class="fa fa-pinterest pr-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

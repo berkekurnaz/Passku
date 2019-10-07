@@ -15,11 +15,13 @@ namespace Passku.WebCoreApp.Controllers
 
         UserManager userManager { get; set; }
         StoredPasswordManager storedPasswordManager { get; set; }
+        AnnouncementManager announcementManager { get; set; }
 
-        public UserController(UserManager userManager, StoredPasswordManager storedPasswordManager)
+        public UserController(UserManager userManager, StoredPasswordManager storedPasswordManager, AnnouncementManager announcementManager)
         {
             this.userManager = userManager;
             this.storedPasswordManager = storedPasswordManager;
+            this.announcementManager = announcementManager;
         }
 
 
@@ -41,18 +43,24 @@ namespace Passku.WebCoreApp.Controllers
 
 
 
+        /*---------------------------------------------------------------------------*/
+
         /* List Announcements */
         public IActionResult Announcements()
         {
-            // BURAYA DUYURULARI LİSTELE.
-            return View();
+            var list = announcementManager.GetAll();
+            return View(list);
         }
 
         /* Get Announcement By Announcement Id */
         public IActionResult AnnouncementDetail(string id)
         {
-            // BURADA ID DEGERİNE GORE DUYURU GELECEK.
-            return View();
+            var announcement = announcementManager.GetById(id);
+            if (announcement == null)
+            {
+                return RedirectToAction("Error", "User");
+            }
+            return View(announcement);
         }
 
 
@@ -155,5 +163,12 @@ namespace Passku.WebCoreApp.Controllers
         }
 
         /*---------------------------------------------------------------------------*/
+
+        public IActionResult Error()
+        {
+            return View();
+        }
+
+
     }
 }

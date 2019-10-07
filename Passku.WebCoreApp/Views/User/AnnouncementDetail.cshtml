@@ -1,0 +1,29 @@
+﻿@model Passku.Models.Concrete.Announcement
+@{
+    ViewData["Title"] = "AnnouncementDetail";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header text-center">
+                <strong class="card-title mb-3">Announcement Detail</strong>
+            </div>
+            <div class="card-body">
+                <div class="mx-auto d-block">
+
+                    <p><strong>Title :</strong> @Model.Title</p>
+                    <p><strong>Created Date :</strong> @Model.Date</p>
+                    <p><strong>Content</strong><br /> @Model.Title</p>
+
+                </div>
+                <hr>
+                <div class="card-text text-sm-center">
+                    <a href="/User/Announcements/" class="btn btn-success btn-sm"><i class="fa fa-angle-double-left"></i> Back Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -31,6 +31,7 @@ namespace Passku.WebCoreApp
             string mongoConnectionString = this.Configuration.GetConnectionString("MongoConnectionString");
             services.AddTransient(s => new UserManager(new UserRepository(mongoConnectionString, "DbPasskuApp", "Users")));
             services.AddTransient(s => new StoredPasswordManager(new StoredPasswordRepository(mongoConnectionString, "DbPasskuApp", "StoredPasswords")));
+            services.AddTransient(s => new AnnouncementManager(new AnnouncementRepository(mongoConnectionString, "DbPasskuApp", "Announcements")));
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IFileProvider>(physicalProvider);
