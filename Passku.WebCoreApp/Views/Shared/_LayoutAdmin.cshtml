@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -77,42 +80,42 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="menu-title">My Panel</li><!-- /.menu-title -->
-                    <li class="active">
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Home" ? "active" : "")">
                         <a href="/User/Home/"><i class="menu-icon fa fa-home"></i>Homepage </a>
                     </li>
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Passwords" ? "active" : "")">
                         <a href="/User/Passwords/"> <i class="menu-icon ti-email"></i>My Passwords </a>
                     </li>
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Profile" ? "active" : "")">
                         <a href="/User/Profile/"> <i class="menu-icon ti-user"></i>Profile </a>
                     </li>
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Announcements" ? "active" : "")">
                         <a href="/User/Announcements/"> <i class="menu-icon fa fa-bullhorn"></i>Announcements</a>
                     </li>
 
 
                     <li class="menu-title">Operations</li><!-- /.menu-title -->
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "CreatePassword" ? "active" : "")">
                         <a href="/User/CreatePassword/"> <i class="menu-icon fa fa-key"></i>Create New Password </a>
                     </li>
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Add" ? "active" : "")">
                         <a href="/Password/Add/"> <i class="menu-icon fa fa-plus-square-o"></i>Add Password </a>
                     </li>
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Report" ? "active" : "")">
                         <a href="/User/Report/"> <i class="menu-icon fa fa-flag-checkered"></i>Report Problem </a>
                     </li>
 
                     <li class="menu-title">Information</li><!-- /.menu-title -->
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")">
                         <a href="/User/About/"> <i class="menu-icon fa fa-info-circle"></i>What is Passku ? </a>
                     </li>
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Use" ? "active" : "")">
                         <a href="/User/Use/"> <i class="menu-icon fa fa-question-circle-o"></i>How To Use ? </a>
                     </li>
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Source" ? "active" : "")">
                         <a href="/User/Source/"> <i class="menu-icon fa fa-codepen"></i>Source Code </a>
                     </li>
-                    <li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Logout" ? "active" : "")">
                         <a href="/User/Logout/"> <i class="menu-icon fa fa-angle-double-left"></i>Quit </a>
                     </li>
 
@@ -128,8 +131,8 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./"><img src="~/TemplateAdmin/images/logo.png" alt="Logo"></a>
-                    <a class="navbar-brand hidden" href="./"><img src="~/TemplateAdmin/images/logo2.png" alt="Logo"></a>
+                    <a class="navbar-brand" href="/User/Home/"><img src="~/TemplateAdmin/images/logopasssku.png" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="/User/Home/"><img src="~/TemplateAdmin/images/logo2.png" alt="Logo"></a>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>
             </div>
@@ -140,21 +143,12 @@
                         <div class="dropdown for-notification">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell"></i>
-                                <span class="count bg-danger">3</span>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="notification">
-                                <p class="red">You have 3 Notification</p>
-                                <a class="dropdown-item media" href="#">
+                                <p class="red">Read Announcements</p>
+                                <a class="dropdown-item media" href="/User/Announcements/">
                                     <i class="fa fa-check"></i>
-                                    <p>Server #1 overloaded.</p>
-                                </a>
-                                <a class="dropdown-item media" href="#">
-                                    <i class="fa fa-info"></i>
-                                    <p>Server #2 overloaded.</p>
-                                </a>
-                                <a class="dropdown-item media" href="#">
-                                    <i class="fa fa-warning"></i>
-                                    <p>Server #3 overloaded.</p>
+                                    <p>Go To Announcements Page !</p>
                                 </a>
                             </div>
                         </div>
@@ -162,41 +156,11 @@
                         <div class="dropdown for-message">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-envelope"></i>
-                                <span class="count bg-primary">4</span>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="message">
-                                <p class="red">You have 4 Mails</p>
-                                <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="~/TemplateAdmin/images/avatar/1.jpg"></span>
-                                    <div class="message media-body">
-                                        <span class="name float-left">Jonathan Smith</span>
-                                        <span class="time float-right">Just now</span>
-                                        <p>Hello, this is an example msg</p>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="~/TemplateAdmin/images/avatar/2.jpg"></span>
-                                    <div class="message media-body">
-                                        <span class="name float-left">Jack Sanders</span>
-                                        <span class="time float-right">5 minutes ago</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="~/TemplateAdmin/images/avatar/3.jpg"></span>
-                                    <div class="message media-body">
-                                        <span class="name float-left">Cheryl Wheeler</span>
-                                        <span class="time float-right">10 minutes ago</span>
-                                        <p>Hello, this is an example msg</p>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="~/TemplateAdmin/images/avatar/4.jpg"></span>
-                                    <div class="message media-body">
-                                        <span class="name float-left">Rachel Santos</span>
-                                        <span class="time float-right">15 minutes ago</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                    </div>
+                                <p class="red">Your Passwords</p>
+                                <a class="dropdown-item media" href="/User/Passwords/">
+                                    <p>Go To Passwords Page !</p>
                                 </a>
                             </div>
                         </div>
@@ -204,17 +168,17 @@
 
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="~/TemplateAdmin/images/admin.jpg" alt="User Avatar">
+                            <img class="user-avatar rounded-circle" src="~/TemplateAdmin/images/logouser.png" alt="User Avatar">
                         </a>
 
                         <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa- user"></i>My Profile</a>
+                            <a class="nav-link" href="/User/Profile/"><i class="fa fa- user"></i>My Profile</a>
 
-                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span class="count">13</span></a>
+                            <a class="nav-link" href="/User/Passwords"><i class="fa fa- user"></i>Passwords</a>
 
                             <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
 
-                            <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                            <a class="nav-link" href="/User/Logout/"><i class="fa fa-power -off"></i>Logout</a>
                         </div>
                     </div>
 
