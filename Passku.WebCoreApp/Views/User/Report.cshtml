@@ -1,0 +1,51 @@
+﻿@model Passku.Models.Concrete.Report
+@{
+    ViewData["Title"] = "Report";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+
+    @if (TempData["MsgReportMessage"] != null)
+    {
+    <div class="col-md-12">
+        <div class="alert alert-dark text-center" role="alert">
+            @TempData["MsgReportMessage"]
+        </div>
+    </div>
+    }
+
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <strong class="card-title">Create New Report</strong>
+            </div>
+            <div class="card-body">
+                <div id="pay-invoice">
+                    <div class="card-body">
+                        <form asp-controller="User" asp-action="Report" method="post" enctype="multipart/form-data">
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Title</label>
+                                <input asp-for="Title" type="text" class="form-control" placeholder="Enter Report Title..." required />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label mb-1">Content</label>
+                                <textarea asp-for="Content" class="form-control" placeholder="Enter Report Content..." rows="6"></textarea><br />
+                            </div>
+
+                            <div class="form-group">
+                                <center><button type="submit" class="btn btn-info"><i class="fa fa-share-square-o" aria-hidden="true"></i> Send Report</button></center>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+

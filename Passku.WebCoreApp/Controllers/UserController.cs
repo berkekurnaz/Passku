@@ -16,12 +16,14 @@ namespace Passku.WebCoreApp.Controllers
         UserManager userManager { get; set; }
         StoredPasswordManager storedPasswordManager { get; set; }
         AnnouncementManager announcementManager { get; set; }
+        ReportManager reportManager { get; set; }
 
-        public UserController(UserManager userManager, StoredPasswordManager storedPasswordManager, AnnouncementManager announcementManager)
+        public UserController(UserManager userManager, StoredPasswordManager storedPasswordManager, AnnouncementManager announcementManager, ReportManager reportManager)
         {
             this.userManager = userManager;
             this.storedPasswordManager = storedPasswordManager;
             this.announcementManager = announcementManager;
+            this.reportManager = reportManager;
         }
 
 
@@ -64,6 +66,27 @@ namespace Passku.WebCoreApp.Controllers
         }
 
 
+        /*---------------------------------------------------------------------------*/
+
+        /* Report Operations */
+        public IActionResult Report()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Report(Report report)
+        {
+            if (report.Title.Length >= 5 && report.Content.Length >= 10)
+            {
+                var userId = new ObjectId(HttpContext.Session.GetString("SessionUserId").ToString());
+                report.Date = DateTime.Now.ToShortDateString();
+                report.UserId = userId;
+                TempData["MsgReportMessage"] = "Your report has been sent successfully.";
+                return RedirectToAction("Report");
+            }
+            TempData["MsgReportMessage"] = "Title field must be at least 5 characters and the Content field must be at least 10 characters.";
+            return View();
+        }
 
         /*---------------------------------------------------------------------------*/
 
