@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using Passku.Business.Concrete.MongoDb;
+using Passku.Generator;
 using Passku.Models.Concrete;
+using Passku.WebCoreApp.Models;
 
 namespace Passku.WebCoreApp.Controllers
 {
@@ -41,6 +43,22 @@ namespace Passku.WebCoreApp.Controllers
             var userId = HttpContext.Session.GetString("SessionUserId").ToString();
             var list = storedPasswordManager.GetByUserId(userId);
             return View(list);
+        }
+
+        /*---------------------------------------------------------------------------*/
+
+        /* Create Password Operations */
+        public IActionResult CreatePassword() 
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CreatePassword(CreatePass createPass)
+        {
+            Generate generate = new Generate();
+            string pass = generate.CreatePassword(passwordLength: createPass.passwordLength, isSymbol: createPass.isSymbol, isNumber: createPass.isNumber, isLowerCase: createPass.isLowerCase, isUpperCase: createPass.isUpperCase);
+            ViewBag.MsgPassword = pass;
+            return View();
         }
 
 
@@ -87,6 +105,8 @@ namespace Passku.WebCoreApp.Controllers
             TempData["MsgReportMessage"] = "Title field must be at least 5 characters and the Content field must be at least 10 characters.";
             return View();
         }
+
+
 
         /*---------------------------------------------------------------------------*/
 

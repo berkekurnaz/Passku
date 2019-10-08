@@ -27,7 +27,8 @@
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
           "Passku.Business": "1.0.0",
-          "Passku.DataAccess": "1.0.0"
+          "Passku.DataAccess": "1.0.0",
+          "Passku.Generator": "1.0.0"
         },
         "runtime": {
           "Passku.WebCoreApp.dll": {}
@@ -4252,6 +4253,14 @@
           "Passku.DataAccess.dll": {}
         }
       },
+      "Passku.Generator/1.0.0": {
+        "runtime": {
+          "Passku.Generator.dll": {}
+        },
+        "compile": {
+          "Passku.Generator.dll": {}
+        }
+      },
       "Passku.Models/1.0.0": {
         "dependencies": {
           "MongoDB.Driver": "2.9.2"
@@ -6648,6 +6657,11 @@
       "sha512": ""
     },
     "Passku.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Passku.Generator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

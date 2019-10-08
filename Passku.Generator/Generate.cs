@@ -18,7 +18,7 @@ namespace Passku.Generator
 
         }
 
-        public String CreatePassword(int? passwordLength=15, bool? isSymbol=false, bool? isNumber=false, bool? isUpperCase=false)
+        public String CreatePassword(int? passwordLength=15, bool? isSymbol=false, bool? isNumber=false, bool? isLowerCase = false, bool? isUpperCase=false)
         {
             string myPassword = "";
 
@@ -34,7 +34,19 @@ namespace Passku.Generator
             for (int i = 0; i < passwordLength; i++)
             {
                 /* Upper Case Control */
-                if (isUpperCase == true)
+                if (isUpperCase == true && isLowerCase == true)
+                {
+                    numberWord = random.Next(44);
+                }
+                else if(isUpperCase == true && isLowerCase == false)
+                {
+                    numberWord = random.Next(23, 44);
+                }
+                else if (isUpperCase == false && isLowerCase == true)
+                {
+                    numberWord = random.Next(23);
+                }
+                else if (isUpperCase == false && isLowerCase == false)
                 {
                     numberWord = random.Next(44);
                 }

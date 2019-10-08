@@ -5250,6 +5250,16 @@
           "bin/placeholder/Passku.DataAccess.dll": {}
         }
       },
+      "Passku.Generator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Passku.Generator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Passku.Generator.dll": {}
+        }
+      },
       "Passku.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -13780,6 +13790,11 @@
       "path": "../Passku.DataAccess/Passku.DataAccess.csproj",
       "msbuildProject": "../Passku.DataAccess/Passku.DataAccess.csproj"
     },
+    "Passku.Generator/1.0.0": {
+      "type": "project",
+      "path": "../Passku.Generator/Passku.Generator.csproj",
+      "msbuildProject": "../Passku.Generator/Passku.Generator.csproj"
+    },
     "Passku.Models/1.0.0": {
       "type": "project",
       "path": "../Passku.Models/Passku.Models.csproj",
@@ -13792,7 +13807,8 @@
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
       "Passku.Business >= 1.0.0",
-      "Passku.DataAccess >= 1.0.0"
+      "Passku.DataAccess >= 1.0.0",
+      "Passku.Generator >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13830,6 +13846,9 @@
             },
             "D:\\YazilimProjeleri2019\\Passku\\Passku.DataAccess\\Passku.DataAccess.csproj": {
               "projectPath": "D:\\YazilimProjeleri2019\\Passku\\Passku.DataAccess\\Passku.DataAccess.csproj"
+            },
+            "D:\\YazilimProjeleri2019\\Passku\\Passku.Generator\\Passku.Generator.csproj": {
+              "projectPath": "D:\\YazilimProjeleri2019\\Passku\\Passku.Generator\\Passku.Generator.csproj"
             }
           }
         }

@@ -12,8 +12,9 @@ namespace Passku.Generator.Abstract
         /// <param name="passwordLength">This parameter is your password length.</param>
         /// <param name="isSymbol">If this parameter is true, your password contains symbols.</param>
         /// <param name="isNumber">If this parameter is true, your password contains numbers.</param>
+        /// <param name="isLowerCase">If this parameter is true, your password contains lower case.</param>
         /// <param name="isUpperCase">If this parameter is true, your password contains upper case.</param>
         /// <returns></returns>
-        String CreatePassword(int? passwordLength = 15, bool? isSymbol = false, bool? isNumber = false, bool? isUpperCase = false);
+        String CreatePassword(int? passwordLength = 15, bool? isSymbol = false, bool? isNumber = false, bool? isLowerCase = false, bool? isUpperCase = false);
     }
 }
