@@ -171,8 +171,6 @@ namespace Passku.WebCoreApp.Controllers
             return View(loginUser);
         }
 
-
-
         /* Register Operations */
         public IActionResult Register()
         {
@@ -197,13 +195,31 @@ namespace Passku.WebCoreApp.Controllers
             return View();
         }
 
-
+        /* Forget Password Operations */
+        public IActionResult ForgetPassword()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult ForgetPassword(string mail)
+        {
+            if (mail.Length > 1)
+            {
+                // TODO : FORGET PASSWORD OPERATİONS.
+                TempData["MsgUserForgetPasswordMessage"] = "Your password has been sent to your email address.";
+                return RedirectToAction("ForgetPassword");
+            }
+            TempData["MsgUserForgetPasswordMessage"] = "Please enter the mail field.";
+            return View();
+        }
 
         /* Logout Operations */
         public IActionResult Logout()
         {
             return RedirectToAction("Index","Home");
         }
+
+
 
         /*---------------------------------------------------------------------------*/
 
