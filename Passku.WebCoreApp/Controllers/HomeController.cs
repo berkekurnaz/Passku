@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Passku.Business.Concrete.MongoDb;
 using Passku.Generator;
+using Passku.Models.Concrete;
 using Passku.WebCoreApp.Models;
 
 namespace Passku.WebCoreApp.Controllers
@@ -13,10 +14,12 @@ namespace Passku.WebCoreApp.Controllers
     {
 
         UserManager userManager { get; set; }
+        ContactManager contactManager { get; set; }
 
-        public HomeController(UserManager userManager)
+        public HomeController(UserManager userManager, ContactManager contactManager)
         {
             this.userManager = userManager;
+            this.contactManager = contactManager;
         }
 
 
@@ -54,10 +57,17 @@ namespace Passku.WebCoreApp.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Contact(string msg)
+        public IActionResult Contact(Contact contact)
         {
-            // BURADA CONTACT
-            return View();
+            if (contact.FirstName.Length > 1 && contact.LastName.Length > 1 && contact.Email.Length > 1 && contact.Subject.Length > 3 && contact.Message.Length > 3)
+            {
+                contact.Date = DateTime.Now.ToShortDateString();
+                contactManager.Add(contact);
+                TempData["MsgContactMessage"] = "Your message was sent successfully";
+                return RedirectToAction("Contact");
+            }
+            TempData["MsgContactMessage"] = "Please fill in all fields";
+            return View(contact);
         }
 
 
