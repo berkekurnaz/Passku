@@ -207,7 +207,30 @@ namespace Passku.WebCoreApp.Controllers
 
         /*---------------------------------------------------------------------------*/
 
+        /* Error Page */
         public IActionResult Error()
+        {
+            return View();
+        }
+
+
+
+        /*---------------------------------------------------------------------------*/
+
+        /* About Page */
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        /* Use Page */
+        public IActionResult Use()
+        {
+            return View();
+        }
+
+        /* Source Page */
+        public IActionResult Source()
         {
             return View();
         }
