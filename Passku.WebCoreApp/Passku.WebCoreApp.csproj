@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Passku.Business\Passku.Business.csproj" />
+    <ProjectReference Include="..\Passku.Cryptology\Passku.Cryptology.csproj" />
     <ProjectReference Include="..\Passku.DataAccess\Passku.DataAccess.csproj" />
     <ProjectReference Include="..\Passku.Generator\Passku.Generator.csproj" />
   </ItemGroup>

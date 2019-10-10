@@ -18,3 +18,5 @@ D:\YazilimProjeleri2019\Passku\Passku.WebCoreApp\bin\Debug\netcoreapp2.0\Passku.
 D:\YazilimProjeleri2019\Passku\Passku.WebCoreApp\bin\Debug\netcoreapp2.0\Passku.Business.pdb
 D:\YazilimProjeleri2019\Passku\Passku.WebCoreApp\bin\Debug\netcoreapp2.0\Passku.Generator.dll
 D:\YazilimProjeleri2019\Passku\Passku.WebCoreApp\bin\Debug\netcoreapp2.0\Passku.Generator.pdb
+D:\YazilimProjeleri2019\Passku\Passku.WebCoreApp\bin\Debug\netcoreapp2.0\Passku.Cryptology.dll
+D:\YazilimProjeleri2019\Passku\Passku.WebCoreApp\bin\Debug\netcoreapp2.0\Passku.Cryptology.pdb

@@ -1,0 +1,9 @@
+D:\YazilimProjeleri2019\Passku\Passku.Cryptology\bin\Debug\netcoreapp2.0\Passku.Cryptology.deps.json
+D:\YazilimProjeleri2019\Passku\Passku.Cryptology\bin\Debug\netcoreapp2.0\Passku.Cryptology.dll
+D:\YazilimProjeleri2019\Passku\Passku.Cryptology\bin\Debug\netcoreapp2.0\Passku.Cryptology.pdb
+D:\YazilimProjeleri2019\Passku\Passku.Cryptology\obj\Debug\netcoreapp2.0\Passku.Cryptology.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Passku\Passku.Cryptology\obj\Debug\netcoreapp2.0\Passku.Cryptology.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Cryptology\obj\Debug\netcoreapp2.0\Passku.Cryptology.AssemblyInfoInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Cryptology\obj\Debug\netcoreapp2.0\Passku.Cryptology.AssemblyInfo.cs
+D:\YazilimProjeleri2019\Passku\Passku.Cryptology\obj\Debug\netcoreapp2.0\Passku.Cryptology.dll
+D:\YazilimProjeleri2019\Passku\Passku.Cryptology\obj\Debug\netcoreapp2.0\Passku.Cryptology.pdb

@@ -5236,6 +5236,16 @@
           "bin/placeholder/Passku.Business.dll": {}
         }
       },
+      "Passku.Cryptology/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Passku.Cryptology.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Passku.Cryptology.dll": {}
+        }
+      },
       "Passku.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -13785,6 +13795,11 @@
       "path": "../Passku.Business/Passku.Business.csproj",
       "msbuildProject": "../Passku.Business/Passku.Business.csproj"
     },
+    "Passku.Cryptology/1.0.0": {
+      "type": "project",
+      "path": "../Passku.Cryptology/Passku.Cryptology.csproj",
+      "msbuildProject": "../Passku.Cryptology/Passku.Cryptology.csproj"
+    },
     "Passku.DataAccess/1.0.0": {
       "type": "project",
       "path": "../Passku.DataAccess/Passku.DataAccess.csproj",
@@ -13807,6 +13822,7 @@
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
       "Passku.Business >= 1.0.0",
+      "Passku.Cryptology >= 1.0.0",
       "Passku.DataAccess >= 1.0.0",
       "Passku.Generator >= 1.0.0"
     ]
@@ -13843,6 +13859,9 @@
           "projectReferences": {
             "D:\\YazilimProjeleri2019\\Passku\\Passku.Business\\Passku.Business.csproj": {
               "projectPath": "D:\\YazilimProjeleri2019\\Passku\\Passku.Business\\Passku.Business.csproj"
+            },
+            "D:\\YazilimProjeleri2019\\Passku\\Passku.Cryptology\\Passku.Cryptology.csproj": {
+              "projectPath": "D:\\YazilimProjeleri2019\\Passku\\Passku.Cryptology\\Passku.Cryptology.csproj"
             },
             "D:\\YazilimProjeleri2019\\Passku\\Passku.DataAccess\\Passku.DataAccess.csproj": {
               "projectPath": "D:\\YazilimProjeleri2019\\Passku\\Passku.DataAccess\\Passku.DataAccess.csproj"

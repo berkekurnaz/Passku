@@ -32,6 +32,7 @@ namespace Passku.WebCoreApp.Controllers
 
         public IActionResult Home()
         {
+            // TODO : STATISTICK
             return View();
         }
 

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using Passku.Business.Concrete.MongoDb;
+using Passku.Cryptology;
 using Passku.Models.Concrete;
 
 namespace Passku.WebCoreApp.Controllers
@@ -35,6 +36,10 @@ namespace Passku.WebCoreApp.Controllers
             var userId = new ObjectId(HttpContext.Session.GetString("SessionUserId").ToString());
             if (storedPassword.Password.Length >= 3 && storedPassword.Title.Length >= 3)
             {
+                // Password Encrypt
+                PasswordCryptology passwordCryptology = new PasswordCryptology();
+                storedPassword.Password = passwordCryptology.Encrypt(storedPassword.Password);
+
                 storedPassword.CreatedDate = DateTime.Now.ToShortDateString();
                 storedPassword.UserId = userId;
                 storedPasswordManager.Add(storedPassword);
@@ -59,6 +64,11 @@ namespace Passku.WebCoreApp.Controllers
             {
                 return RedirectToAction("Error", "User");
             }
+
+            // Password Decrypt
+            PasswordCryptology passwordCryptology = new PasswordCryptology();
+            password.Password = passwordCryptology.Decrypt(password.Password);
+
             return View(password);
         }
 
@@ -77,6 +87,11 @@ namespace Passku.WebCoreApp.Controllers
             {
                 return RedirectToAction("Error", "User");
             }
+
+            // Password Decrypt
+            PasswordCryptology passwordCryptology = new PasswordCryptology();
+            password.Password = passwordCryptology.Decrypt(password.Password);
+
             return View(password);
         }
         [HttpPost]
@@ -85,8 +100,11 @@ namespace Passku.WebCoreApp.Controllers
             var item = storedPasswordManager.GetById(id);
             if (storedPassword.Password.Length >= 3 && storedPassword.Title.Length >= 3)
             {
+                // Password Encrypt
+                PasswordCryptology passwordCryptology = new PasswordCryptology();
+
                 item.Title = storedPassword.Title;
-                item.Password = storedPassword.Password;
+                item.Password = passwordCryptology.Encrypt(storedPassword.Password);
                 item.Content = storedPassword.Content;
                 item.Url = storedPassword.Url;
                 storedPasswordManager.Update(id, item);
@@ -111,6 +129,11 @@ namespace Passku.WebCoreApp.Controllers
             {
                 return RedirectToAction("Error", "User");
             }
+
+            // Password Decrypt
+            PasswordCryptology passwordCryptology = new PasswordCryptology();
+            password.Password = passwordCryptology.Decrypt(password.Password);
+
             return View(password);
         }
         [HttpPost]
