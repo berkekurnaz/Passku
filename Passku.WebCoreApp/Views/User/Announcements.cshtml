@@ -17,7 +17,7 @@
                     {
                         @foreach (var item in Model)
                         {
-                            <center><a href="/User/AnnouncementDetail/"><p>Hello World -10/7/2019</p></a></center>
+                            <center><a href="/User/AnnouncementDetail/@item.Id"><p>@item.Title -@item.Date</p></a></center>
                         }
                     }
                     else

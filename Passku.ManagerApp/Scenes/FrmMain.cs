@@ -55,5 +55,11 @@ namespace Passku.ManagerApp.Scenes
             FrmCreateAnnouncement frmCreateAnnouncement = new FrmCreateAnnouncement();
             frmCreateAnnouncement.Show();
         }
+
+        private void btnShowMembers_Click(object sender, EventArgs e)
+        {
+            FrmUsers frmUsers = new FrmUsers();
+            frmUsers.Show();
+        }
     }
 }

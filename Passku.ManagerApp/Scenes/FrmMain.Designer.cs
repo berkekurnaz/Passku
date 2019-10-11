@@ -193,6 +193,7 @@
             this.btnShowMembers.TabIndex = 6;
             this.btnShowMembers.Text = "Show Members";
             this.btnShowMembers.UseVisualStyleBackColor = true;
+            this.btnShowMembers.Click += new System.EventHandler(this.btnShowMembers_Click);
             // 
             // btnSendMessage
             // 

@@ -32,9 +32,9 @@ namespace Passku.ManagerApp.DataAccess
             return mongoCollection.Find(book => true).ToList();
         }
 
-        public T GetById(string id)
+        public T GetById(string Id)
         {
-            var documentId = new ObjectId(id);
+            var documentId = new ObjectId(Id);
             return mongoCollection.Find(x => x.Id == documentId).FirstOrDefault();
         }
 
@@ -43,15 +43,15 @@ namespace Passku.ManagerApp.DataAccess
             mongoCollection.InsertOne(model);
         }
 
-        public void Update(string id, T model)
+        public void Update(string Id, T model)
         {
-            var documentId = new ObjectId(id);
+            var documentId = new ObjectId(Id);
             mongoCollection.ReplaceOne(x => x.Id == documentId, model);
         }
 
-        public void Delete(string id)
+        public void Delete(string Id)
         {
-            var documentId = new ObjectId(id);
+            var documentId = new ObjectId(Id);
             mongoCollection.DeleteOne(x => x.Id == documentId);
         }
 
