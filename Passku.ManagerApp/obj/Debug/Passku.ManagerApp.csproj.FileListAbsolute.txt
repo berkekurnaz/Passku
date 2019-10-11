@@ -1,0 +1,10 @@
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\bin\Debug\Passku.ManagerApp.exe.config
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\bin\Debug\Passku.ManagerApp.exe
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\bin\Debug\Passku.ManagerApp.pdb
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.Properties.Resources.resources
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.Scenes.FrmLogin.resources
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.csproj.GenerateResource.cache
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.exe
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.pdb

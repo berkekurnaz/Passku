@@ -20,7 +20,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passku.DataAccess", "Passku
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passku.Business", "Passku.Business\Passku.Business.csproj", "{8A62F7B2-EB84-4804-A380-E643B1E977B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.Cryptology", "Passku.Cryptology\Passku.Cryptology.csproj", "{D3760AE8-8BD5-4A87-8B9A-DC570D8F3D77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passku.Cryptology", "Passku.Cryptology\Passku.Cryptology.csproj", "{D3760AE8-8BD5-4A87-8B9A-DC570D8F3D77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.ManagerApp", "Passku.ManagerApp\Passku.ManagerApp.csproj", "{BE697072-ADDA-416E-A726-FC8B50FE8ADD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{D3760AE8-8BD5-4A87-8B9A-DC570D8F3D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3760AE8-8BD5-4A87-8B9A-DC570D8F3D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3760AE8-8BD5-4A87-8B9A-DC570D8F3D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE697072-ADDA-416E-A726-FC8B50FE8ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE697072-ADDA-416E-A726-FC8B50FE8ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE697072-ADDA-416E-A726-FC8B50FE8ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE697072-ADDA-416E-A726-FC8B50FE8ADD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,9 +2,9 @@
 
 # Passku
 Passku is an open source password generation and password management platform. <br/>
-Passku ile kolayca güçlü þifreler oluþturabilir, þifrelerinizi kolayca yönetebilirsiniz. <br/> 
-Passku platform baðýmsýz bir uygulamadýr. Ýnternet uygulamamýzý, mobil uygulamamýzý veya masaüstü uygulamamýzý kullanabilirsiniz.<br>
-Ýnternet uygulamamýz sadece þifrelerinizi bulut üzerinde saklama imkaný verirken, mobil ve masaüstü uygulamamýz ile isterseniz bulut üzerinde isterseniz kendi cihazýnýz üzerinde þifrelerinizi kolayca saklayabilirsiniz. <br/>
+Passku ile kolayca guclu sifreler olusturabilir, sifrelerinizi kolayca yonetebilirsiniz. <br/> 
+Passku platform bagimsiz bir uygulamadýr. Internet uygulamamizi, mobil uygulamamizi veya masaustu uygulamamizi kullanabilirsiniz.<br>
+Internet uygulamamÝz sadece sifrelerinizi bulut Uzerinde saklama imkanÝ verirken, mobil ve masaUstU uygulamamÝz ile isterseniz bulut uzerinde isterseniz kendi cihazýnýz uzerinde sifrelerinizi kolayca saklayabilirsiniz. <br/>
 
 
 ## Products
