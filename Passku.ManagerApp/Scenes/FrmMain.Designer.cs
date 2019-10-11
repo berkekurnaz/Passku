@@ -211,6 +211,7 @@
             this.btnCreateAnnouncement.TabIndex = 4;
             this.btnCreateAnnouncement.Text = "Create Announcement";
             this.btnCreateAnnouncement.UseVisualStyleBackColor = true;
+            this.btnCreateAnnouncement.Click += new System.EventHandler(this.btnCreateAnnouncement_Click);
             // 
             // label4
             // 

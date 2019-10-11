@@ -50,7 +50,10 @@ namespace Passku.ManagerApp.Scenes
 
         }
 
-
-
+        private void btnCreateAnnouncement_Click(object sender, EventArgs e)
+        {
+            FrmCreateAnnouncement frmCreateAnnouncement = new FrmCreateAnnouncement();
+            frmCreateAnnouncement.Show();
+        }
     }
 }
