@@ -20,5 +20,9 @@ namespace Passku.Business.Abstract.MongoDb
 
         void Delete(string id);
 
+        int GetUserPasswordCount(string userId);
+
+        int GetTotalPasswordCount();
+
     }
 }

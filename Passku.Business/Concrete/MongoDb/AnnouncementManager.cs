@@ -43,5 +43,11 @@ namespace Passku.Business.Concrete.MongoDb
         {
             _announcementRepository.DeleteModel(id);
         }
+
+        public int GetAnnouncementCount()
+        {
+            return _announcementRepository.GetAll().Count;
+        }
+
     }
 }

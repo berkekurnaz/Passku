@@ -51,5 +51,16 @@ namespace Passku.Business.Concrete.MongoDb
             _storedPasswordRepository.DeleteModel(id);
         }
 
+        public int GetUserPasswordCount(string userId)
+        {
+            var user = new ObjectId(userId);
+            return _storedPasswordRepository.GetAll().FindAll(x => x.UserId == user).Count;
+        }
+
+        public int GetTotalPasswordCount()
+        {
+            return _storedPasswordRepository.GetAll().Count;
+        }
+
     }
 }

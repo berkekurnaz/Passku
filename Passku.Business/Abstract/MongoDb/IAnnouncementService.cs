@@ -18,5 +18,7 @@ namespace Passku.Business.Abstract.MongoDb
 
         void Delete(string id);
 
+        int GetAnnouncementCount();
+
     }
 }

@@ -13,7 +13,7 @@
             <div class="card-body">
                 <div class="mx-auto d-block">
                     <h5 class="text-sm-center mt-2 mb-1">
-                        Welcome Berke Kurnaz <br />
+                        Welcome @ViewBag.Username <br />
                         This is your control panel. You can create your password here and save it to the database if you want. <br />
                         The Passwords You Have Saved To The Database Are Encrypted Once Again For Security.
                     </h5>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="stat-content">
                         <div class="text-left dib">
-                            <div class="stat-text"><span class="count">10</span></div>
+                            <div class="stat-text"><span class="count">@ViewBag.YourPasswords</span></div>
                             <div class="stat-heading">Your Passwords</div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="stat-content">
                         <div class="text-left dib">
-                            <div class="stat-text"><span class="count">3200</span></div>
+                            <div class="stat-text"><span class="count">@ViewBag.TotalPasswords</span></div>
                             <div class="stat-heading">Total Passwords</div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="stat-content">
                         <div class="text-left dib">
-                            <div class="stat-text"><span class="count">3</span></div>
+                            <div class="stat-text"><span class="count">@ViewBag.Announcements</span></div>
                             <div class="stat-heading">Announcements</div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="stat-content">
                         <div class="text-left dib">
-                            <div class="stat-text"><span class="count">145</span></div>
+                            <div class="stat-text"><span class="count">@ViewBag.MemberCount</span></div>
                             <div class="stat-heading">Member Count</div>
                         </div>
                     </div>

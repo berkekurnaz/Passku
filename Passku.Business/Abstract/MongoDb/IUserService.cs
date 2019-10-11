@@ -24,5 +24,7 @@ namespace Passku.Business.Abstract.MongoDb
 
         User CheckByMail(User model);
 
+        int GetUserCount();
+
     }
 }

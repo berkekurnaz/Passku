@@ -65,5 +65,10 @@ namespace Passku.Business.Concrete.MongoDb
             return result;
         }
 
+        public int GetUserCount()
+        {
+            return _userRepository.GetAll().Count;
+        }
+
     }
 }

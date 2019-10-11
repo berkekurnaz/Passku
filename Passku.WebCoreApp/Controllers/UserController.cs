@@ -32,7 +32,15 @@ namespace Passku.WebCoreApp.Controllers
 
         public IActionResult Home()
         {
-            // TODO : STATISTICK
+            var userId = HttpContext.Session.GetString("SessionUserId").ToString();
+
+            ViewBag.Username = HttpContext.Session.GetString("SessionUserUsername").ToString();
+
+            ViewBag.YourPasswords = storedPasswordManager.GetUserPasswordCount(userId).ToString();
+            ViewBag.TotalPasswords = storedPasswordManager.GetTotalPasswordCount().ToString();
+            ViewBag.Announcements = announcementManager.GetAnnouncementCount().ToString();
+            ViewBag.MemberCount = userManager.GetUserCount().ToString();
+
             return View();
         }
 
