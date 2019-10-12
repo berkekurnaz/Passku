@@ -101,6 +101,24 @@
     <Compile Include="Scenes\FrmCreateAnnouncement.Designer.cs">
       <DependentUpon>FrmCreateAnnouncement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Scenes\FrmDetailAnnouncement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\FrmDetailAnnouncement.Designer.cs">
+      <DependentUpon>FrmDetailAnnouncement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\FrmDetailContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\FrmDetailContact.Designer.cs">
+      <DependentUpon>FrmDetailContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\FrmDetailReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\FrmDetailReport.Designer.cs">
+      <DependentUpon>FrmDetailReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Scenes\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +148,15 @@
     </Compile>
     <EmbeddedResource Include="Scenes\FrmCreateAnnouncement.resx">
       <DependentUpon>FrmCreateAnnouncement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\FrmDetailAnnouncement.resx">
+      <DependentUpon>FrmDetailAnnouncement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\FrmDetailContact.resx">
+      <DependentUpon>FrmDetailContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\FrmDetailReport.resx">
+      <DependentUpon>FrmDetailReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Scenes\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

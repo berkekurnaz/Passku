@@ -124,3 +124,6 @@ D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.exe
 D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.csproj.CopyComplete
 D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.Scenes.FrmCreateAnnouncement.resources
 D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.Scenes.FrmUsers.resources
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.Scenes.FrmDetailAnnouncement.resources
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.Scenes.FrmDetailContact.resources
+D:\YazilimProjeleri2019\Passku\Passku.ManagerApp\obj\Debug\Passku.ManagerApp.Scenes.FrmDetailReport.resources

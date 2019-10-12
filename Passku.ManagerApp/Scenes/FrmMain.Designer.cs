@@ -93,6 +93,7 @@
             this.dgwReports.RowTemplate.Height = 24;
             this.dgwReports.Size = new System.Drawing.Size(671, 288);
             this.dgwReports.TabIndex = 1;
+            this.dgwReports.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwReports_CellClick);
             // 
             // label1
             // 
@@ -133,6 +134,7 @@
             this.dgwMessages.RowTemplate.Height = 24;
             this.dgwMessages.Size = new System.Drawing.Size(671, 288);
             this.dgwMessages.TabIndex = 1;
+            this.dgwMessages.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwMessages_CellClick);
             // 
             // label5
             // 
@@ -242,6 +244,7 @@
             this.dgwAnnouncements.RowTemplate.Height = 24;
             this.dgwAnnouncements.Size = new System.Drawing.Size(561, 288);
             this.dgwAnnouncements.TabIndex = 4;
+            this.dgwAnnouncements.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwAnnouncements_CellClick);
             // 
             // label6
             // 
@@ -319,6 +322,7 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Passku Manager App";
+            this.Activated += new System.EventHandler(this.FrmMain_Activated);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgwReports)).EndInit();
