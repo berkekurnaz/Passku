@@ -5028,6 +5028,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Passku.Generator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Passku.Generator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Passku.Generator.dll": {}
+        }
       }
     }
   },
@@ -13292,13 +13302,19 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Passku.Generator/1.0.0": {
+      "type": "project",
+      "path": "../Passku.Generator/Passku.Generator.csproj",
+      "msbuildProject": "../Passku.Generator/Passku.Generator.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.8",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
+      "Passku.Generator >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13330,7 +13346,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\YazilimProjeleri2019\\Passku\\Passku.Generator\\Passku.Generator.csproj": {
+              "projectPath": "D:\\YazilimProjeleri2019\\Passku\\Passku.Generator\\Passku.Generator.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

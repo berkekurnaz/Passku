@@ -9,3 +9,6 @@ D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Debug\netcoreapp2.0\Passku.ApiA
 D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Debug\netcoreapp2.0\Passku.ApiApp.AssemblyInfo.cs
 D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Debug\netcoreapp2.0\Passku.ApiApp.dll
 D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Debug\netcoreapp2.0\Passku.ApiApp.pdb
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\bin\Debug\netcoreapp2.0\Passku.Generator.dll
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\bin\Debug\netcoreapp2.0\Passku.Generator.pdb
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Debug\netcoreapp2.0\Passku.ApiApp.csproj.CopyComplete
