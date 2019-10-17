@@ -24,7 +24,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passku.Cryptology", "Passku
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.ManagerApp", "Passku.ManagerApp\Passku.ManagerApp.csproj", "{BE697072-ADDA-416E-A726-FC8B50FE8ADD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.ApiApp", "Passku.ApiApp\Passku.ApiApp.csproj", "{66527389-6C67-4D5C-82DA-281A9BCD335D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passku.ApiApp", "Passku.ApiApp\Passku.ApiApp.csproj", "{66527389-6C67-4D5C-82DA-281A9BCD335D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passku.MobileApiApp", "Passku.MobileApiApp\Passku.MobileApiApp.csproj", "{9EBE15E0-D379-4866-919A-8F4D22AA777C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +70,10 @@ Global
 		{66527389-6C67-4D5C-82DA-281A9BCD335D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66527389-6C67-4D5C-82DA-281A9BCD335D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66527389-6C67-4D5C-82DA-281A9BCD335D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EBE15E0-D379-4866-919A-8F4D22AA777C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBE15E0-D379-4866-919A-8F4D22AA777C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EBE15E0-D379-4866-919A-8F4D22AA777C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EBE15E0-D379-4866-919A-8F4D22AA777C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
