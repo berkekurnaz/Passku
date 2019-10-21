@@ -31,6 +31,7 @@ namespace Passku.MobileAppApi
             string mongoConnectionString = this.Configuration.GetConnectionString("MongoConnectionString");
             services.AddTransient(s => new UserManager(new UserRepository(mongoConnectionString, "DbPasskuApp", "Users")));
             services.AddTransient(s => new ManagerManager(new ManagerRepository(mongoConnectionString, "DbPasskuApp", "Managers")));
+            services.AddTransient(s => new AnnouncementManager(new AnnouncementRepository(mongoConnectionString, "DbPasskuApp", "Announcements")));
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IFileProvider>(physicalProvider);
