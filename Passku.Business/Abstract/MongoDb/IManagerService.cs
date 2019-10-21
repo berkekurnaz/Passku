@@ -18,6 +18,8 @@ namespace Passku.Business.Abstract.MongoDb
 
         void Delete(string id);
 
+        Manager CheckByApikey(string apikey);
+
         Manager Login(Manager model);
 
     }

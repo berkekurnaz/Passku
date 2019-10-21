@@ -44,6 +44,13 @@ namespace Passku.Business.Concrete.MongoDb
             _managerRepository.DeleteModel(id);
         }
 
+        public Manager CheckByApikey(string apikey)
+        {
+            var result = new Manager();
+            result = _managerRepository.GetAll().Find(x => x.Username == apikey);
+            return result;
+        }
+
         public Manager Login(Manager model)
         {
             var result = new Manager();

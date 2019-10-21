@@ -9,3 +9,10 @@ D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\obj\Debug\netcoreapp2.0\Passk
 D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.MobileAppApi.pdb
 D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\obj\Debug\netcoreapp2.0\Passku.MobileAppApi.dll
 D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\obj\Debug\netcoreapp2.0\Passku.MobileAppApi.pdb
+D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.Models.dll
+D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.Models.pdb
+D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\obj\Debug\netcoreapp2.0\Passku.MobileAppApi.csproj.CopyComplete
+D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.Business.dll
+D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.DataAccess.dll
+D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.Business.pdb
+D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.DataAccess.pdb
