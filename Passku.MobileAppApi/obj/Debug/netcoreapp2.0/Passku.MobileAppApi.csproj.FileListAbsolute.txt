@@ -16,3 +16,5 @@ D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passk
 D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.DataAccess.dll
 D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.Business.pdb
 D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.DataAccess.pdb
+D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.Cryptology.dll
+D:\YazilimProjeleri2019\Passku\Passku.MobileAppApi\bin\Debug\netcoreapp2.0\Passku.Cryptology.pdb
