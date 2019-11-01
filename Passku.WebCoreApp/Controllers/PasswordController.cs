@@ -8,6 +8,7 @@ using MongoDB.Bson;
 using Passku.Business.Concrete.MongoDb;
 using Passku.Cryptology;
 using Passku.Models.Concrete;
+using Passku.WebCoreApp.Helpers.Auth;
 
 namespace Passku.WebCoreApp.Controllers
 {
@@ -26,6 +27,7 @@ namespace Passku.WebCoreApp.Controllers
 
 
         /* Create New Password */
+        [AuthFilter]
         public IActionResult Add()
         {
             return View();
@@ -52,6 +54,7 @@ namespace Passku.WebCoreApp.Controllers
 
 
         /* Read Password By Id */
+        [AuthFilter]
         public IActionResult Detail(string id)
         {
             var userId = new ObjectId(HttpContext.Session.GetString("SessionUserId").ToString());
@@ -75,6 +78,7 @@ namespace Passku.WebCoreApp.Controllers
 
 
         /* Edit Password By Id */
+        [AuthFilter]
         public IActionResult Edit(string id)
         {
             var userId = new ObjectId(HttpContext.Session.GetString("SessionUserId").ToString());
@@ -117,6 +121,7 @@ namespace Passku.WebCoreApp.Controllers
 
 
         /* Delete Password By Id */
+        [AuthFilter]
         public IActionResult Delete(string id)
         {
             var userId = new ObjectId(HttpContext.Session.GetString("SessionUserId").ToString());

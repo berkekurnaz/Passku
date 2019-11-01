@@ -8,6 +8,7 @@ using MongoDB.Bson;
 using Passku.Business.Concrete.MongoDb;
 using Passku.Generator;
 using Passku.Models.Concrete;
+using Passku.WebCoreApp.Helpers.Auth;
 using Passku.WebCoreApp.Models;
 
 namespace Passku.WebCoreApp.Controllers
@@ -30,6 +31,7 @@ namespace Passku.WebCoreApp.Controllers
 
 
 
+        [AuthFilter]
         public IActionResult Home()
         {
             var userId = HttpContext.Session.GetString("SessionUserId").ToString();
@@ -44,9 +46,10 @@ namespace Passku.WebCoreApp.Controllers
             return View();
         }
 
-      
-    
+
+
         /* List Passwords By UserId */
+        [AuthFilter]
         public IActionResult Passwords()
         {
             var userId = HttpContext.Session.GetString("SessionUserId").ToString();
@@ -57,6 +60,7 @@ namespace Passku.WebCoreApp.Controllers
         /*---------------------------------------------------------------------------*/
 
         /* Create Password Operations */
+        [AuthFilter]
         public IActionResult CreatePassword() 
         {
             return View();
@@ -75,6 +79,7 @@ namespace Passku.WebCoreApp.Controllers
         /*---------------------------------------------------------------------------*/
 
         /* List Announcements */
+        [AuthFilter]
         public IActionResult Announcements()
         {
             var list = announcementManager.GetAll();
@@ -82,6 +87,7 @@ namespace Passku.WebCoreApp.Controllers
         }
 
         /* Get Announcement By Announcement Id */
+        [AuthFilter]
         public IActionResult AnnouncementDetail(string id)
         {
             var announcement = announcementManager.GetById(id);
@@ -96,6 +102,7 @@ namespace Passku.WebCoreApp.Controllers
         /*---------------------------------------------------------------------------*/
 
         /* Report Operations */
+        [AuthFilter]
         public IActionResult Report()
         {
             return View();
@@ -120,6 +127,7 @@ namespace Passku.WebCoreApp.Controllers
         /*---------------------------------------------------------------------------*/
 
         /* List Passwords By UserId */
+        [AuthFilter]
         public IActionResult Profile()
         {
             var userId = HttpContext.Session.GetString("SessionUserId").ToString();
@@ -233,6 +241,7 @@ namespace Passku.WebCoreApp.Controllers
         /*---------------------------------------------------------------------------*/
 
         /* Error Page */
+        [AuthFilter]
         public IActionResult Error()
         {
             return View();
@@ -243,18 +252,21 @@ namespace Passku.WebCoreApp.Controllers
         /*---------------------------------------------------------------------------*/
 
         /* About Page */
+        [AuthFilter]
         public IActionResult About()
         {
             return View();
         }
 
         /* Use Page */
+        [AuthFilter]
         public IActionResult Use()
         {
             return View();
         }
 
         /* Source Page */
+        [AuthFilter]
         public IActionResult Source()
         {
             return View();
