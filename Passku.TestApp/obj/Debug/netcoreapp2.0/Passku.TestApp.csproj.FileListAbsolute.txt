@@ -3,7 +3,6 @@ D:\YazilimProjeleri2019\Passku\Passku.TestApp\bin\Debug\netcoreapp2.0\Passku.Tes
 D:\YazilimProjeleri2019\Passku\Passku.TestApp\bin\Debug\netcoreapp2.0\Passku.TestApp.runtimeconfig.dev.json
 D:\YazilimProjeleri2019\Passku\Passku.TestApp\bin\Debug\netcoreapp2.0\Passku.TestApp.dll
 D:\YazilimProjeleri2019\Passku\Passku.TestApp\bin\Debug\netcoreapp2.0\Passku.TestApp.pdb
-D:\YazilimProjeleri2019\Passku\Passku.TestApp\obj\Debug\netcoreapp2.0\Passku.TestApp.csprojAssemblyReference.cache
 D:\YazilimProjeleri2019\Passku\Passku.TestApp\obj\Debug\netcoreapp2.0\Passku.TestApp.csproj.CoreCompileInputs.cache
 D:\YazilimProjeleri2019\Passku\Passku.TestApp\obj\Debug\netcoreapp2.0\Passku.TestApp.AssemblyInfoInputs.cache
 D:\YazilimProjeleri2019\Passku\Passku.TestApp\obj\Debug\netcoreapp2.0\Passku.TestApp.AssemblyInfo.cs

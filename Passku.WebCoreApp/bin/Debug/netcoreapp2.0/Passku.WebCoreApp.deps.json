@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "deb13a6380bb0160ded15ba4809d0bea802a59cf"
+    "signature": "b3653ba3538ef406761151f4d2e7a3eb81aa333a"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "Passku.WebCoreApp/1.0.0": {
         "dependencies": {
+          "Mailjet.Api": "1.2.2",
           "Microsoft.AspNetCore.All": "2.0.8",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
@@ -86,6 +87,18 @@
             "rid": "win-x86",
             "assetType": "native"
           }
+        }
+      },
+      "Mailjet.Api/1.2.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Mailjet.Client.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.1/Mailjet.Client.dll": {}
         }
       },
       "Microsoft.ApplicationInsights/2.4.0": {
@@ -4475,6 +4488,13 @@
       "sha512": "sha512-GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "path": "libuv/1.10.0",
       "hashPath": "libuv.1.10.0.nupkg.sha512"
+    },
+    "Mailjet.Api/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EyuZ4zPv4fGjQDBR78TTPW7BQ16Vd+vPmzN0RK2RCIfvDH9jBN7uSBCh4AmLikiesLGjof2UaOoRiHZl521ghA==",
+      "path": "mailjet.api/1.2.2",
+      "hashPath": "mailjet.api.1.2.2.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights/2.4.0": {
       "type": "package",

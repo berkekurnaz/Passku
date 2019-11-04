@@ -9,6 +9,7 @@ using Passku.Business.Concrete.MongoDb;
 using Passku.Generator;
 using Passku.Models.Concrete;
 using Passku.WebCoreApp.Helpers.Auth;
+using Passku.WebCoreApp.Helpers.Mail;
 using Passku.WebCoreApp.Models;
 
 namespace Passku.WebCoreApp.Controllers
@@ -223,6 +224,7 @@ namespace Passku.WebCoreApp.Controllers
             if (mail.Length > 1)
             {
                 // TODO : FORGET PASSWORD OPERATİONS.
+                SendMail.RunAsync("de").Wait();
                 TempData["MsgUserForgetPasswordMessage"] = "Your password has been sent to your email address.";
                 return RedirectToAction("ForgetPassword");
             }
@@ -235,8 +237,6 @@ namespace Passku.WebCoreApp.Controllers
         {
             return RedirectToAction("Index","Home");
         }
-
-
 
         /*---------------------------------------------------------------------------*/
 

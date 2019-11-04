@@ -68,11 +68,13 @@ namespace Passku.Generator
                 if (isSymbol == true && numberRandom1 == 1)
                 {
                     myPassword = myPassword + symbol;
+                    i = i + 1;
                 }
 
                 if (isNumber == true && numberRandom2 == 1)
                 {
                     myPassword = myPassword + number;
+                    i = i + 1;
                 }
 
                 myPassword = myPassword + word;
