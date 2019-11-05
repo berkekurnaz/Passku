@@ -1,0 +1,14 @@
+D:\YazilimProjeleri2019\Passku\Passku.Business\bin\Release\netcoreapp2.0\Passku.Business.deps.json
+D:\YazilimProjeleri2019\Passku\Passku.Business\bin\Release\netcoreapp2.0\Passku.Business.dll
+D:\YazilimProjeleri2019\Passku\Passku.Business\bin\Release\netcoreapp2.0\Passku.Business.pdb
+D:\YazilimProjeleri2019\Passku\Passku.Business\bin\Release\netcoreapp2.0\Passku.DataAccess.dll
+D:\YazilimProjeleri2019\Passku\Passku.Business\bin\Release\netcoreapp2.0\Passku.Models.dll
+D:\YazilimProjeleri2019\Passku\Passku.Business\bin\Release\netcoreapp2.0\Passku.DataAccess.pdb
+D:\YazilimProjeleri2019\Passku\Passku.Business\bin\Release\netcoreapp2.0\Passku.Models.pdb
+D:\YazilimProjeleri2019\Passku\Passku.Business\obj\Release\netcoreapp2.0\Passku.Business.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Passku\Passku.Business\obj\Release\netcoreapp2.0\Passku.Business.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Business\obj\Release\netcoreapp2.0\Passku.Business.AssemblyInfoInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Business\obj\Release\netcoreapp2.0\Passku.Business.AssemblyInfo.cs
+D:\YazilimProjeleri2019\Passku\Passku.Business\obj\Release\netcoreapp2.0\Passku.Business.csproj.CopyComplete
+D:\YazilimProjeleri2019\Passku\Passku.Business\obj\Release\netcoreapp2.0\Passku.Business.dll
+D:\YazilimProjeleri2019\Passku\Passku.Business\obj\Release\netcoreapp2.0\Passku.Business.pdb

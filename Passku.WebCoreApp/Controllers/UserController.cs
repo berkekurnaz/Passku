@@ -116,6 +116,8 @@ namespace Passku.WebCoreApp.Controllers
                 var userId = new ObjectId(HttpContext.Session.GetString("SessionUserId").ToString());
                 report.Date = DateTime.Now.ToShortDateString();
                 report.UserId = userId;
+
+                reportManager.Add(report);
                 TempData["MsgReportMessage"] = "Your report has been sent successfully.";
                 return RedirectToAction("Report");
             }

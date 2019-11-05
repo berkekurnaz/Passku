@@ -1,0 +1,9 @@
+D:\YazilimProjeleri2019\Passku\Passku.Generator\bin\Release\netcoreapp2.0\Passku.Generator.deps.json
+D:\YazilimProjeleri2019\Passku\Passku.Generator\bin\Release\netcoreapp2.0\Passku.Generator.dll
+D:\YazilimProjeleri2019\Passku\Passku.Generator\bin\Release\netcoreapp2.0\Passku.Generator.pdb
+D:\YazilimProjeleri2019\Passku\Passku.Generator\obj\Release\netcoreapp2.0\Passku.Generator.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Passku\Passku.Generator\obj\Release\netcoreapp2.0\Passku.Generator.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Generator\obj\Release\netcoreapp2.0\Passku.Generator.AssemblyInfoInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Generator\obj\Release\netcoreapp2.0\Passku.Generator.AssemblyInfo.cs
+D:\YazilimProjeleri2019\Passku\Passku.Generator\obj\Release\netcoreapp2.0\Passku.Generator.dll
+D:\YazilimProjeleri2019\Passku\Passku.Generator\obj\Release\netcoreapp2.0\Passku.Generator.pdb

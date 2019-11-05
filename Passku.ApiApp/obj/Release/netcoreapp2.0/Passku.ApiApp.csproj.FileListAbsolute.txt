@@ -1,0 +1,14 @@
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\bin\Release\netcoreapp2.0\Passku.ApiApp.deps.json
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\bin\Release\netcoreapp2.0\Passku.ApiApp.runtimeconfig.json
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\bin\Release\netcoreapp2.0\Passku.ApiApp.runtimeconfig.dev.json
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\bin\Release\netcoreapp2.0\Passku.ApiApp.dll
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\bin\Release\netcoreapp2.0\Passku.ApiApp.pdb
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\bin\Release\netcoreapp2.0\Passku.Generator.dll
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\bin\Release\netcoreapp2.0\Passku.Generator.pdb
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Release\netcoreapp2.0\Passku.ApiApp.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Release\netcoreapp2.0\Passku.ApiApp.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Release\netcoreapp2.0\Passku.ApiApp.AssemblyInfoInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Release\netcoreapp2.0\Passku.ApiApp.AssemblyInfo.cs
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Release\netcoreapp2.0\Passku.ApiApp.csproj.CopyComplete
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Release\netcoreapp2.0\Passku.ApiApp.dll
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp\obj\Release\netcoreapp2.0\Passku.ApiApp.pdb

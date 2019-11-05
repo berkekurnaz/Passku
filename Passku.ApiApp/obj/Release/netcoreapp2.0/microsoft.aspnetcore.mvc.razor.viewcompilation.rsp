@@ -1,0 +1,5 @@
+D:\YazilimProjeleri2019\Passku\Passku.ApiApp
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=Passku.ApiApp
+--content-root=D:\YazilimProjeleri2019\Passku\Passku.ApiApp
+--file=D:\YazilimProjeleri2019\Passku\Passku.ApiApp\Views\Home\Index.cshtml

@@ -6,4 +6,3 @@ D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Debug\netcoreapp2.0\Passku.Mode
 D:\YazilimProjeleri2019\Passku\Passku.Models\bin\Debug\netcoreapp2.0\Passku.Models.pdb
 D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Debug\netcoreapp2.0\Passku.Models.dll
 D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Debug\netcoreapp2.0\Passku.Models.pdb
-D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Debug\netcoreapp2.0\Passku.Models.csprojAssemblyReference.cache

@@ -1,0 +1,9 @@
+D:\YazilimProjeleri2019\Passku\Passku.Models\bin\Release\netcoreapp2.0\Passku.Models.deps.json
+D:\YazilimProjeleri2019\Passku\Passku.Models\bin\Release\netcoreapp2.0\Passku.Models.dll
+D:\YazilimProjeleri2019\Passku\Passku.Models\bin\Release\netcoreapp2.0\Passku.Models.pdb
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Release\netcoreapp2.0\Passku.Models.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Release\netcoreapp2.0\Passku.Models.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Release\netcoreapp2.0\Passku.Models.AssemblyInfoInputs.cache
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Release\netcoreapp2.0\Passku.Models.AssemblyInfo.cs
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Release\netcoreapp2.0\Passku.Models.dll
+D:\YazilimProjeleri2019\Passku\Passku.Models\obj\Release\netcoreapp2.0\Passku.Models.pdb
