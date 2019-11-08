@@ -64,7 +64,9 @@ class _SelectModeState extends State<SelectMode> {
                 color: Colors.white,
                 textColor: Colors.black,
                 padding: EdgeInsets.all(8.0),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, "/offlineHome");
+                },
                 child: Text(
                   "Use Offline Mode",
                   style: TextStyle(
